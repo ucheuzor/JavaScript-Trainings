@@ -1,0 +1,29 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+}
+#CounterLabel {
+  font-family: Helvetica, sans-serif, Arial;
+  font-size: 8em;
+  text-align: Center;
+  display: block;
+}
+#buttonContainer {
+  text-align: center;
+}
+
+.buttons {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  color: white;
+  background-color: rgb(21, 146, 146);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.25s;
+  border-color: rgb(12, 72, 72);
+  border-style: solid;
+}
+
+.buttons:hover {
+  background-color: rgb(75, 185, 185);
+}
