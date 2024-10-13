@@ -23,6 +23,31 @@ for (i = 0; i < fruits.length; i++) {
     console.log(fruits[i])
 }
 
+
+// working with rest function
+function AddNumbers(...numbers) {
+    let result = 0;
+    for (let num of numbers) {
+        result += num;
+    };
+
+    return result;
+};
+
+function GetAverage(...numbers) {
+    let result = 0;
+    for (let num of numbers) {
+        result += num;
+    };
+
+    return result / numbers.length;
+};
+
+const total = AddNumbers(1, 4, 9, 6);
+const average = GetAverage(1, 4, 9, 6);
+console.log(`Your total is $${total} and the average is $${average}`)
+
+
 /*reverse an array
 for (i = fruits.length - 1; i >= 0; i--) {
     console.log(fruits[i])
