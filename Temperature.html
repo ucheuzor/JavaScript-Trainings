@@ -4,13 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <form>
       <h1>Temperature Conversion:</h1>
       <input type="number" placeholder="number" id="textBox" /><br />
       <input type="radio" name="unit" id="ToFarenheit" />
-      <label for="ToFarenheit">Celsius to Farenheit </label>
+      <label for="ToFarenheit">Celsius ➡ Farenheit </label><br />
+      <input type="radio" name="unit" id="ToCelsius" />
+      <label for="ToCelsius">Farenheit ➡ Celsius</label><br />
+
+      <button type="button" onclick="Convert()" id="submit">Submit</button>
+      <p id="result">Select a Unit</p>
     </form>
+
+    <script src="Temperature.js"></script>
   </body>
 </html>
